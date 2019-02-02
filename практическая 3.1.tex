@@ -32,9 +32,15 @@
 
 
 %x^3-x^2-8*x-12
-\draw[domain=3.8:4.8, smooth, red] plot ({\x},{((\x)*(\x)*(\x))-((\x)*(\x))-(8*(\x))-12}); 
-\draw[domain=4:4.8, smooth, help lines, pink] plot ({\x},{(57*(\x))-237}); 
-\draw[domain=3.8:4.8, smooth, help lines, green] plot ({\x},{(35.3675*(\x))-137.72425}); 
+\draw[domain=3.8:5.1, smooth, red] plot ({\x},{((\x)*(\x)*(\x))-((\x)*(\x))-(8*(\x))-12}); 
+\draw[domain=4:5.1, smooth, help lines, pink] plot ({\x},{(57*(\x))-237}); 
+\draw[domain=3.8:5.1, smooth, help lines, green] plot ({\x},{(35.3675*(\x))-137.72425}); 
+
+\draw[thin,dashed] ({4.15},{0}) -- ({4.15},{{(4.15^3-(4.15^2)-(8*4.15)-12}});
+
+\draw[thin,dashed] ({5},{0}) -- ({5},{((5)*(5)*(5))-((5)*(5))-(8*(5))-12)});
+
+%\draw[thin,dashed] ({4.15},{0}) -- ;
 
 \end{scope}; 
 \end{scope};
